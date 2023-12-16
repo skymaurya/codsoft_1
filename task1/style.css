@@ -1,0 +1,245 @@
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(logo.jpg);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:rgb(5, 255, 255);
+}
+
+nav {
+    margin-top: 10px;
+}
+ 
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hero {
+    
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(hero3.jpg);
+    text-align: center;
+    padding: 100px 0;
+
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+     color: rgb(21, 255, 0);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: rgb(43, 255, 0);
+    font-family:'Times New Roman', Times, serif;
+}
+
+.hero button {
+    background-color: #fbff00;
+    color:rgb(10, 17, 225);
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: skyblue;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+    padding: 40px 0;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(main2.jpg);
+    background-color: rgb(0, 255, 213);
+}
+
+.featured-movies {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: rgb(242, 238, 5);
+    
+}
+
+.movie {
+    width: 30%;
+    margin-bottom: 20px;
+    border:whitesmoke;
+}
+
+.movie img {
+    width: 40%;
+    height:50%;
+}
+
+.movie h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.upcoming-releases {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(237, 237, 247);
+}
+
+.release {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.release img {
+    width: 50%;
+    height: 50%;
+}
+
+.release h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.showtime-booking {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(showback.jpg);
+}
+
+.showtime-schedule,
+.seat-selection {
+    width: 48%;
+}
+
+.showtime-schedule h2{
+    color: aqua;
+}
+.showtime {
+    background-color: #0ce1f5;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.showtime button {
+    background-color: #ffcc00;
+    color: #0a16c2;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+}
+
+.ticket-options {
+    background-color:transparent;
+    
+    padding: 20px;
+}
+
+.ticket-options h2{
+    color: #05f405;
+}
+
+.ticket-option {
+    margin-bottom: 10px;
+    color: #05f405;
+}
+.ticket-option button{
+    background-color:#0ce1f5;
+    color: #091dd1;
+}
+
+.user-engagement {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    
+    flex-wrap: wrap;
+}
+
+.reviews-ratings,
+.social-media {
+    width: 48%;
+}
+
+.user-review {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #2edcfa;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact-info,
+footer nav {
+    margin-bottom: 20px;
+}
+
+footer nav ul {
+    list-style-type:circle ;
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer nav a {
+    color: #050503;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .featured-movies .movie {
+        width: 100%;
+    }
+
+    .upcoming-releases,
+    .showtime-booking {
+        flex-direction: column;
+    }
+
+    .showtime-schedule,
+    .seat-selection {
+        width: 100%;
+    }
+
+    .user-engagement {
+        flex-direction: column;
+    }
+
+    .reviews-ratings,
+    .social-media {
+        width: 100%;
+    }
+}
